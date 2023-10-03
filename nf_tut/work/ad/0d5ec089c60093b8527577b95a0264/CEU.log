@@ -1,0 +1,26 @@
+PLINK v1.90b7 64-bit (16 Jan 2023)
+Options in effect:
+  --bed CEU.bed
+  --bim CEU.bim
+  --fam CEU.fam
+  --freq
+  --out CEU
+
+Hostname: elwazi-cww-03
+Working directory: /home/user05/nf_tut/work/ad/0d5ec089c60093b8527577b95a0264
+Start time: Mon Oct  2 17:10:05 2023
+
+Random number seed: 1696259405
+32093 MB RAM detected; reserving 16046 MB for main workspace.
+52889 variants loaded from .bim file.
+174 people (0 males, 0 females, 174 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to CEU.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 174 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.670609.
+--freq: Allele frequencies (founders only) written to CEU.frq .
+
+End time: Mon Oct  2 17:10:05 2023

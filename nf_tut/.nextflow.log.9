@@ -1,0 +1,88 @@
+Oct-02 13:12:47.638 [main] DEBUG nextflow.cli.Launcher - $> nextflow run multiple_clean.nf --data ../test/data
+Oct-02 13:12:47.705 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-02 13:12:47.730 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/user05/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-02 13:12:47.739 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-02 13:12:47.740 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-02 13:12:47.742 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-02 13:12:47.750 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-02 13:12:47.819 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-02 13:12:47.824 [main] INFO  nextflow.cli.CmdRun - Launching `multiple_clean.nf` [exotic_yalow] DSL2 - revision: 6cbf08c5d1
+Oct-02 13:12:47.824 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-02 13:12:47.824 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-02 13:12:47.835 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/user05/.nextflow/secrets/store.json
+Oct-02 13:12:47.841 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@47447ccf] - activable => nextflow.secret.LocalSecretsProvider@47447ccf
+Oct-02 13:12:47.922 [main] DEBUG nextflow.Session - Session UUID: e8ea5916-d827-4af4-a7eb-a7659b3566c9
+Oct-02 13:12:47.923 [main] DEBUG nextflow.Session - Run name: exotic_yalow
+Oct-02 13:12:47.925 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-02 13:12:47.937 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-02 13:12:48.043 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5883
+  Created: 25-09-2023 15:46 UTC 
+  System: Linux 5.15.0-84-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 19.0.2+7-Ubuntu-0ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 28102@localhost null
+  CPUs: 4 - Mem: 31.3 GB (26.4 GB) - Swap: 0 (0)
+Oct-02 13:12:48.071 [main] DEBUG nextflow.Session - Work-dir: /home/user05/nf_tut/work [ext2/ext3]
+Oct-02 13:12:48.072 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/user05/nf_tut/bin
+Oct-02 13:12:48.101 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+Oct-02 13:12:48.112 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-02 13:12:48.115 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-02 13:12:48.143 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-02 13:12:48.153 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Oct-02 13:12:48.244 [main] DEBUG nextflow.Session - Session start
+Oct-02 13:12:48.555 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /home/user05/nf_tut/multiple_clean.nf
+- cause: Unexpected character: '#' @ line 22, column 1.
+   #process getDups {
+   ^
+
+1 error
+
+nextflow.exception.ScriptCompilationException: Script compilation error
+- file : /home/user05/nf_tut/multiple_clean.nf
+- cause: Unexpected character: '#' @ line 22, column 1.
+   #process getDups {
+   ^
+
+1 error
+
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:187)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:194)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:199)
+	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:210)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:128)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:665)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script_b0305ea3: 22: Unexpected character: '#' @ line 22, column 1.
+   #process getDups {
+   ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4321)
+	at org.apache.groovy.parser.antlr4.AstBuilder.createParsingFailedException(AstBuilder.java:4304)
+	at org.apache.groovy.parser.antlr4.AstBuilder.convertException(AstBuilder.java:261)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:235)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269)
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
+	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.codehaus.groovy.control.CompilationUnit.buildASTs(CompilationUnit.java:667)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:633)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:526)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:538)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:570)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:169)
+	... 7 common frames omitted

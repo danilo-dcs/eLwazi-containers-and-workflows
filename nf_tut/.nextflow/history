@@ -1,0 +1,16 @@
+2023-10-02 12:46:36	2.4s	cranky_feynman	OK	15cc3f01577a85ed811dc0baaed0ed49	416679c0-f2d3-47f4-b165-12a930000c91	nextflow run cleandups.nf
+2023-10-02 12:54:10	2.7s	exotic_curie	OK	6128c614fb6063afd2a1b270087c2751	589ca7fd-1df7-4b22-a5e1-9480c3fdbaf5	nextflow run cleandups.nf
+2023-10-02 12:59:10	2.2s	cheeky_mayer	OK	6128c614fb6063afd2a1b270087c2751	589ca7fd-1df7-4b22-a5e1-9480c3fdbaf5	nextflow run cleandups.nf -resume
+2023-10-02 13:00:45	2s	astonishing_lagrange	OK	6128c614fb6063afd2a1b270087c2751	d639f3ec-1068-45a4-b228-2cca387c59f9	nextflow run cleandups.nf -with-dag dag_test.dot
+2023-10-02 13:02:07	2.2s	furious_agnesi	OK	6128c614fb6063afd2a1b270087c2751	24e8a068-7136-4e7b-b6f0-6ac23dba4425	nextflow run cleandups.nf -with-timeline timeline_test.html
+2023-10-02 13:02:56	3.2s	scruffy_turing	OK	6128c614fb6063afd2a1b270087c2751	644c5e33-0c50-4ef9-af25-63636b127a38	nextflow run cleandups.nf -with-report report_test.html
+2023-10-02 13:12:48	-	exotic_yalow	-	6cbf08c5d1f89130a5dfd8300723b1c6	e8ea5916-d827-4af4-a7eb-a7659b3566c9	nextflow run multiple_clean.nf --data ../test/data
+2023-10-02 13:13:40	-	awesome_kalam	-	e73e561fbd8cf509be4212b3fdbed983	c5c62fc5-d5df-4ca0-a45d-07222fa70012	nextflow run multiple_clean.nf --data ../test/data
+2023-10-02 13:13:48	-	zen_mirzakhani	-	e73e561fbd8cf509be4212b3fdbed983	d38e0b0f-b479-4eb3-acea-140f0e0ed1a9	nextflow run multiple_clean.nf
+2023-10-02 13:14:18	2.6s	special_pike	OK	d22e4005723ff40c60cacd4250b4adfa	774b4d3c-3741-4fb4-8673-e5392e7e5f35	nextflow run multiple_clean.nf
+2023-10-02 13:18:31	1.6s	pedantic_feynman	OK	d0047573cf4f03ef51a15156ccca723b	4a988c71-8313-480a-9521-7eb8232e438d	nextflow run multiple_clean.nf --data data
+2023-10-02 13:20:19	2.6s	extravagant_pike	OK	9ae7c004f102efb886ac4b4887c3f415	0afb0950-437b-45f5-a7b2-12b875b612b7	nextflow run multiple_clean.nf --data data
+2023-10-02 14:08:05	1.3s	sleepy_kilby	OK	000ad39772aeada99fed2ae7b1639d2d	b9a3ce10-81e2-474d-a426-4f36785c6581	nextflow run map.nf
+2023-10-02 14:29:51	1.4s	jolly_majorana	ERR	7175ef58100394d33784f0a679184303	88c505ad-c1f6-4680-a5a9-6a4193d44a6a	nextflow run map_plink.nf -with-singularity 'docker://phelelani/misc:plink'
+2023-10-02 15:08:41	1.9s	modest_golick	ERR	ed07b08e34b30b05d951b37198638956	3d810a49-28e4-42d8-949a-09c9edd45185	nextflow run map_plink.nf
+2023-10-02 15:09:33	33.2s	extravagant_keller	OK	f8e0a67c685006c79c342feb451c38bf	a0a05dd8-e92a-4f96-851c-572a69c9c19f	nextflow run map_plink.nf

@@ -1,0 +1,22 @@
+digraph "dag_test" {
+p0 [shape=point,label="",fixedsize=true,width=0.1,xlabel="Channel.fromPath"];
+p1 [label="getIDs"];
+p0 -> p1 [label="input_ch"];
+
+p1 [label="getIDs"];
+p2 [label="getDups"];
+p1 -> p2;
+
+p1 [label="getIDs"];
+p3 [label="removeDups"];
+p1 -> p3;
+
+p2 [label="getDups"];
+p3 [label="removeDups"];
+p2 -> p3;
+
+p3 [label="removeDups"];
+p4 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="subscribe"];
+p3 -> p4;
+
+}

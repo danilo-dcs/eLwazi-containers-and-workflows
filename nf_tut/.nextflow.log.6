@@ -1,0 +1,92 @@
+Oct-02 13:14:18.249 [main] DEBUG nextflow.cli.Launcher - $> nextflow run multiple_clean.nf
+Oct-02 13:14:18.336 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-02 13:14:18.364 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/user05/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-02 13:14:18.374 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-02 13:14:18.375 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-02 13:14:18.378 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-02 13:14:18.386 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-02 13:14:18.452 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-02 13:14:18.457 [main] INFO  nextflow.cli.CmdRun - Launching `multiple_clean.nf` [special_pike] DSL2 - revision: d22e400572
+Oct-02 13:14:18.458 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-02 13:14:18.458 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-02 13:14:18.469 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/user05/.nextflow/secrets/store.json
+Oct-02 13:14:18.476 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3cff0139] - activable => nextflow.secret.LocalSecretsProvider@3cff0139
+Oct-02 13:14:18.563 [main] DEBUG nextflow.Session - Session UUID: 774b4d3c-3741-4fb4-8673-e5392e7e5f35
+Oct-02 13:14:18.563 [main] DEBUG nextflow.Session - Run name: special_pike
+Oct-02 13:14:18.565 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-02 13:14:18.576 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-02 13:14:18.682 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5883
+  Created: 25-09-2023 15:46 UTC 
+  System: Linux 5.15.0-84-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 19.0.2+7-Ubuntu-0ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 28330@localhost null
+  CPUs: 4 - Mem: 31.3 GB (26.4 GB) - Swap: 0 (0)
+Oct-02 13:14:18.712 [main] DEBUG nextflow.Session - Work-dir: /home/user05/nf_tut/work [ext2/ext3]
+Oct-02 13:14:18.712 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/user05/nf_tut/bin
+Oct-02 13:14:18.745 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, GoogleBatchExecutor]
+Oct-02 13:14:18.758 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-02 13:14:18.761 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-02 13:14:18.793 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-02 13:14:18.811 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Oct-02 13:14:18.917 [main] DEBUG nextflow.Session - Session start
+Oct-02 13:14:19.556 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-02 13:14:19.657 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-02 13:14:19.657 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-02 13:14:19.661 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-02 13:14:19.667 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=31.3 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-02 13:14:19.763 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-02 13:14:19.764 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-02 13:14:19.770 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-02 13:14:19.770 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-02 13:14:19.773 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: getDups, getIDs, removeDups
+Oct-02 13:14:19.773 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Oct-02 13:14:19.778 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getIDs
+Oct-02 13:14:19.781 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: data/; pattern: *.bim; options: [:]
+Oct-02 13:14:19.782 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getDups
+Oct-02 13:14:19.782 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > removeDups
+Oct-02 13:14:19.789 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-02 13:14:19.789 [main] DEBUG nextflow.Session - Session await
+Oct-02 13:14:19.963 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:19.965 [Task submitter] INFO  nextflow.Session - [e5/3c209c] Submitted process > getIDs (1)
+Oct-02 13:14:19.971 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:19.973 [Task submitter] INFO  nextflow.Session - [ac/c693e7] Submitted process > getIDs (3)
+Oct-02 13:14:19.977 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:19.983 [Task submitter] INFO  nextflow.Session - [51/0ec83b] Submitted process > getIDs (2)
+Oct-02 13:14:19.986 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:19.990 [Task submitter] INFO  nextflow.Session - [37/ea742c] Submitted process > getIDs (4)
+Oct-02 13:14:20.053 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: getIDs (3); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/ac/c693e7cf4109ea1be4ba32309354f0]
+Oct-02 13:14:20.079 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.079 [Task submitter] INFO  nextflow.Session - [fc/77f501] Submitted process > getDups (1)
+Oct-02 13:14:20.108 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: getIDs (2); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/51/0ec83ba8759e3d647c55d412fecbec]
+Oct-02 13:14:20.111 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: getIDs (4); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/37/ea742c474653b92e81730c930a4a91]
+Oct-02 13:14:20.125 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.125 [Task submitter] INFO  nextflow.Session - [49/cd3491] Submitted process > getDups (2)
+Oct-02 13:14:20.128 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.129 [Task submitter] INFO  nextflow.Session - [b8/404df3] Submitted process > getDups (3)
+Oct-02 13:14:20.149 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: getIDs (1); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/e5/3c209ce1bc4897d11c5897473c95d7]
+Oct-02 13:14:20.157 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.158 [Task submitter] INFO  nextflow.Session - [58/d951e3] Submitted process > getDups (4)
+Oct-02 13:14:20.187 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: getDups (1); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/fc/77f5010f4b13b0391b018469a400fa]
+Oct-02 13:14:20.195 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.195 [Task submitter] INFO  nextflow.Session - [19/f40564] Submitted process > removeDups (1)
+Oct-02 13:14:20.225 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: getDups (2); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/49/cd3491aeda10847f54c06afdb7e568]
+Oct-02 13:14:20.233 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.233 [Task submitter] INFO  nextflow.Session - [e8/a00f25] Submitted process > removeDups (2)
+Oct-02 13:14:20.247 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: getDups (4); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/58/d951e3648ae4b983c941563d39db82]
+Oct-02 13:14:20.254 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.254 [Task submitter] INFO  nextflow.Session - [1b/04468a] Submitted process > removeDups (3)
+Oct-02 13:14:20.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: removeDups (1); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/19/f405640452b996a4364cf6da6dbd88]
+Oct-02 13:14:20.301 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: getDups (3); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/b8/404df3227a9aa4766741b19feec30e]
+Oct-02 13:14:20.303 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: removeDups (2); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/e8/a00f2520dec47b6717893f414c3c41]
+Oct-02 13:14:20.307 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 13:14:20.307 [Task submitter] INFO  nextflow.Session - [3b/dc7e7f] Submitted process > removeDups (4)
+Oct-02 13:14:20.316 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: removeDups (3); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/1b/04468a02f086999f904a207d5772a3]
+Oct-02 13:14:20.366 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: removeDups (4); status: COMPLETED; exit: 0; error: -; workDir: /home/user05/nf_tut/work/3b/dc7e7f6eb405b24f95f752616f0c16]
+Oct-02 13:14:20.369 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-02 13:14:20.467 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-02 13:14:20.492 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=12; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=675ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Oct-02 13:14:20.570 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-02 13:14:20.583 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-02 13:14:20.584 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

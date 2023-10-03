@@ -1,0 +1,24 @@
+PLINK v1.90b7 64-bit (16 Jan 2023)
+Options in effect:
+  --bed JPT.bed
+  --bim JPT.bim
+  --fam JPT.fam
+  --freq
+  --out JPT
+
+Hostname: elwazi-cww-03
+Working directory: /home/user05/nf_tut/work/d8/48bf69dcaa117cc469bb46a6dd7b94
+Start time: Mon Oct  2 17:10:05 2023
+
+Random number seed: 1696259405
+32093 MB RAM detected; reserving 16046 MB for main workspace.
+20483 variants loaded from .bim file.
+113 people (0 males, 0 females, 113 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to JPT.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 113 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.997707.
+--freq: Allele frequencies (founders only) written to JPT.frq .
+
+End time: Mon Oct  2 17:10:05 2023
