@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cd /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution
+tmpDir=$(mkdir -p "/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/tmp.72c26f4f" && echo "/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/tmp.72c26f4f")
+
+export _JAVA_OPTIONS=-Djava.io.tmpdir="$tmpDir"
+export TMPDIR="$tmpDir"
+export HOME="$HOME"
+(
+cd /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution
+
+)
+out9a8ab58b="${tmpDir}/out.$$" err9a8ab58b="${tmpDir}/err.$$"
+mkfifo "$out9a8ab58b" "$err9a8ab58b"
+trap 'rm "$out9a8ab58b" "$err9a8ab58b"' EXIT
+touch '/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/stdout' '/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/stderr'
+tee '/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/stdout' < "$out9a8ab58b" &
+tee '/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/stderr' < "$err9a8ab58b" >&2 &
+(
+cd /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution
+
+
+echo Hello world > hello.txt
+)  > "$out9a8ab58b" 2> "$err9a8ab58b"
+echo $? > /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/rc.tmp
+(
+# add a .file in every empty directory to facilitate directory delocalization on the cloud
+cd /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution
+find . -type d -exec sh -c '[ -z "$(ls -A '"'"'{}'"'"')" ] && touch '"'"'{}'"'"'/.file' \;
+)
+(
+cd /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution
+sync
+
+
+)
+mv /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/rc.tmp /home/user05/myworkflows_wdl/cromwell-executions/hellowdl/9a8ab58b-9586-4798-9ed1-95fa792481f4/call-helloworld/execution/rc
