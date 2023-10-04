@@ -1,2 +1,0 @@
-/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/2a6d48a7-52ca-4209-9592-810ad1a0012b/call-helloworld/execution/script: line 23: syntax error near unexpected token `('
-/home/user05/myworkflows_wdl/cromwell-executions/hellowdl/2a6d48a7-52ca-4209-9592-810ad1a0012b/call-helloworld/execution/script: line 23: `echo HelloString (optional, default = "Kat") > hello.txt'
