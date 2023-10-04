@@ -1,8 +1,8 @@
 # eLwazi-containers-and-workflows
 
-![elwazi](https://github.com/danilo-dcs/eLwazi-containers-and-workflows/assets/48869631/250e74df-7ebe-4d95-bc75-a24a9452e79d)
-
 This repository was made to store and organize all the files from the eLwazi Containers and Workflows Workshop. 
+
+![elwazi](https://github.com/danilo-dcs/eLwazi-containers-and-workflows/assets/48869631/250e74df-7ebe-4d95-bc75-a24a9452e79d | width=150) 
 
 ## Containers
 The containers folder includes all the Dockerfiles to build the images developed during the workshop. For further instructions, please read the README files inside each subcontainer folder.
