@@ -1,6 +1,7 @@
+version 1.2
 workflows:
 name: feature_counts
   subclass: WDL
-  primaryDescriptorPath:/hackathon/featurecounts.wdl
+  primaryDescriptorPath: /hackathon/featurecounts.wdl
   testParameterFiles:
    - /hackathon/featurecounts_inputs_terra.json
