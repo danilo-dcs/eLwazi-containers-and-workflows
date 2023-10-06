@@ -1,0 +1,9 @@
+{
+  "counting_workflow.annotationFile": "gs://fc-2d3123cb-4846-4f5b-8a4a-a90498b5b07e/gencode.v44.annotation.gtf",
+  "counting_workflow.outputFilename": "counts.txt",
+  "counting_workflow.seqFiles": [
+    "gs://fc-2d3123cb-4846-4f5b-8a4a-a90498b5b07e/wgEncodeUwRepliSeqBg02esG2AlnRep1.bam"
+  ],
+  "counting_workflow.geneId": "gene_id"
+}
+

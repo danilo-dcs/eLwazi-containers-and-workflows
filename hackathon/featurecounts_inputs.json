@@ -1,0 +1,9 @@
+{
+  "counting_workflow.annotationFile": "/home/user05/eLwazi-containers-and-workflows/hackathon/files/gencode.v44.annotation.gtf",
+  "counting_workflow.outputFilename": "counts.txt",
+  "counting_workflow.seqFiles": [
+    "/home/user05/eLwazi-containers-and-workflows/hackathon/files/wgEncodeUwRepliSeqBg02esG2AlnRep1.bam"
+  ],
+  "counting_workflow.geneId": "gene_id"
+}
+
